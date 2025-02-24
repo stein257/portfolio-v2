@@ -1,0 +1,16 @@
+---
+import cv from "../../assets/cv.svg";
+import { Image } from "astro:assets";
+import GetMyCv from "./GetMyCv.astro";
+---
+
+<div class="h-[52%] w-full grid grid-cols-[1fr_2fr] [border-bottom-style:solid] border-b-[0.5vw]">
+  <GetMyCv />
+  <a href="/Simon Stein Resume.pdf" class="w-full h-full" target="_blank" rel="noreferrer">
+    <Image
+      src={cv}
+      alt="Simon's resume"
+      class="w-full h-full scale-80 cursor-pointer hover:scale-85 transition-transform duration-750 ease"
+    />
+  </a>
+</div>

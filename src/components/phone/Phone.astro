@@ -1,9 +1,11 @@
-<div
-  class="absolute w-[6.5vw] h-[10.5vw] bg-background border border-[0.25vw] border-secondary-stroke rounded-[0.5vw]
-            left-[15vw] top-[23.05vw] transition-transform duration-1000 ease
-            flex flex-row flex-wrap justify-center items-center
-            [@media(max-height:600px)]:top-[22.75vw]
-            hover:translate-y-[-2vw] hover:cursor-pointer
-            [@media(max-height:600px)]:hover:translate-y-[0] [@media(max-height:600px)]:hover:cursor-pointer"
+---
+import PhoneContent from "./PhoneContent.jsx";
+---
+
+<a
+  href={"https://wa.me/5491158056691?text=I%20saw%20your%20portfolio%20and%20I%20want%20to%20get%20in%20touch"}
+  target={"_blank"}
+  rel={"noreferrer"}
 >
-</div>
+  <PhoneContent client:load />
+</a>
