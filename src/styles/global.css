@@ -1,13 +1,10 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @theme {
     --color-background: #0F111A;
     --color-stroke: #EEFFFF;
     --color-secondary-stroke: #C6D2D2;
 
     --font-cursive: 'Fuzzy Bubbles', cursive;
+    --font-sans: 'DM Sans Variable', sans-serif;
 }
