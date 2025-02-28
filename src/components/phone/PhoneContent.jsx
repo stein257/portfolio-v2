@@ -5,7 +5,7 @@ const PhoneContent = () => {
 
   return (
     <div
-      className="absolute w-[6.5vw] h-[10.5vw] bg-background border border-[0.25vw] border-secondary-stroke rounded-[0.5vw]
+      className="absolute w-[6.5vw] h-[10.5vw] bg-background border-[0.25vw] border-secondary-stroke rounded-[0.5vw]
             left-[15vw] top-[23.05vw] transition-transform duration-1000 ease
             flex flex-row flex-wrap justify-center items-center
             [@media(max-height:600px)]:top-[22.75vw]
@@ -19,8 +19,8 @@ const PhoneContent = () => {
       }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={"42"}
-        height={"42"}
+        width={"50"}
+        height={"50"}
         viewBox="0 0 512 512"
         className={"transform transition-transform duration-1000 ease text-stroke"}
         style={{ transform: logoTransform }}>

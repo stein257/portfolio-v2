@@ -1,0 +1,99 @@
+---
+import nextLogo from "../../assets/logos/next.svg";
+import astroLogo from "../../assets/logos/astro.svg";
+import reactLogo from "../../assets/logos/react.svg";
+import nodeLogo from "../../assets/logos/node.svg";
+import pythonLogo from "../../assets/logos/python.svg";
+import mongoLogo from "../../assets/logos/mongo.svg";
+import { Image } from "astro:assets";
+---
+
+<section
+  class="absolute w-[19vw] h-[31vw] right-[9vw] top-[38vw] border-[0.5vw] border-stroke grid grid-rows-[1fr_1fr_1fr]"
+>
+  <div class="w-full border-b-[0.5vw] border-stroke flex items-center justify-center gap-[2%]">
+    <a
+      class="w-[45%] h-[100%] flex items-center justify-center cursor-pointer"
+      href="https://nextjs.org/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image
+        loading="eager"
+        src={nextLogo}
+        alt="Next.js Logo"
+        class="w-[100%] aspect-square object-contain hover:scale-110 transition-transform duration-500"
+      />
+    </a>
+    <a
+      class="w-[45%] h-[100%] flex items-center justify-center pt-[5%] cursor-pointer"
+      href="https://astro.build/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image
+        loading="eager"
+        src={astroLogo}
+        alt="Astro.js Logo"
+        class="w-[75%] aspect-square object-contain hover:scale-110 transition-transform duration-500"
+      />
+    </a>
+  </div>
+  <div class="w-full border-b-[0.5vw] border-stroke flex items-center justify-center gap-[2%]">
+    <a
+      class="w-[45%] h-[100%] flex items-center justify-center cursor-pointer"
+      href="https://reactjs.org/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image
+        loading="eager"
+        src={reactLogo}
+        alt="React.js Logo"
+        class="w-[100%] aspect-square object-contain hover:scale-110 transition-transform duration-500"
+      />
+    </a>
+    <a
+      class="w-[45%] h-[100%] flex items-center justify-center cursor-pointer"
+      href="https://nodejs.org/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image
+        loading="eager"
+        src={nodeLogo}
+        alt="Node.js Logo"
+        class="w-[90%] aspect-square object-contain hover:scale-110 transition-transform duration-500"
+      />
+    </a>
+  </div>
+  <div class="w-full flex items-center justify-center gap-[2%]">
+    <a
+      class="w-[45%] h-[100%] flex items-center justify-center cursor-pointer"
+      href="https://www.python.org/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image
+        loading="lazy"
+        src={pythonLogo}
+        alt="Python Logo"
+        class="w-[90%] aspect-square object-contain hover:scale-110 transition-transform duration-500"
+      />
+    </a>
+    <a
+      class="w-[45%] h-[100%] flex items-center justify-center cursor-pointer"
+      href="https://www.mongodb.com/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image
+        loading="lazy"
+        src={mongoLogo}
+        alt="MongoDB Logo"
+        class="w-[90%] aspect-square object-contain hover:scale-110 transition-transform duration-500"
+      />
+    </a>
+  </div>
+  <div></div>
+</section>

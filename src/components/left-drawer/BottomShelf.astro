@@ -1,22 +1,52 @@
-<div class="h-full flex items-end justify-end relative">
+---
+import { Image } from "astro:assets";
+import wipperIsoLogo from "../../assets/logos/wipper-iso.png";
+import arrow from "../../assets/arrow.svg";
+import ProjectBook from "./ProjectBook.astro";
+---
+
+<Fragment>
   <div
-    class="border-secondary-stroke font-sans rounded border-[.25vw] py-[.25vw] px-[1vw] h-[15%] w-[12.8vw] mr-[1.2vw] absolute left-[.7vw] flex items-center gap-[1vw] text-[1.4vw] leading-none"
+    class="font-cursive absolute text-[1.5vw] left-[-8.25vw] top-[18vw] w-[8vw] -rotate-10 leading-10"
   >
+    my projects
+    <img src={arrow.src} alt="Arrow" />
   </div>
-  <div
-    class="flex items-center border-secondary-stroke rounded border-[.25vw] h-[15%] w-[12vw] absolute left-[1vw] bottom-[2.2vw] px-[1vw] gap-[1vw]"
-  >
+  <div class="h-full flex items-end justify-end relative">
+    <ProjectBook
+      href="https://github.com/stein257/portfolio-v2"
+      containerClass="rotate-12 h-[80%] w-[2vw] right-[1.1vw] flex items-center justify-center bg-[#232736] hover:-translate-y-2"
+    >
+      <img src="/favicon.svg" alt="Coder Waving" class="w-[90%] aspect-square" loading="lazy" />
+    </ProjectBook>
+
+    <ProjectBook
+      href="https://prometheo.ai/"
+      containerClass="left-[.7vw] bg-[#6103BC] w-[12.8vw] px-[1vw] hover:-translate-x-1"
+    >
+      <p class="text-[1.1vw] leading-none font-orbitron">Prometheo</p>
+    </ProjectBook>
+    <ProjectBook
+      href="https://www.wipper.app/"
+      containerClass="left-[1vw] bottom-[2.2vw] bg-[#7a2a75] w-[12vw] px-[1vw] hover:-translate-x-1"
+    >
+      <div class="flex items-center justify-end w-full">
+        <Image src={wipperIsoLogo} alt="logo" class="w-[5vw] object-contain" />
+      </div>
+    </ProjectBook>
+    <ProjectBook
+      href="https://fastboard-3jvcw.ondigitalocean.app"
+      containerClass="left-[1vw] bottom-[4.4vw] bg-[#004493] w-[11.5vw] px-[.5vw] hover:-translate-x-1"
+    >
+      <p class="text-[1vw] leading-none font-krona text-blue-300">Fastboard</p>
+    </ProjectBook>
+    <ProjectBook
+      href="https://github.com/fiufit/app"
+      containerClass="w-[12vw] left-[.8vw] bottom-[6.6vw]  bg-[#ACCE63] px-[1vw] hover:-translate-x-1"
+    >
+      <div class="flex items-center justify-end w-full">
+        <p class="text-[1.2vw] leading-none font-monterrat font-bold italic text-white">Fiu Fit</p>
+      </div>
+    </ProjectBook>
   </div>
-  <div
-    class="border-secondary-stroke rounded border-[.25vw] h-[15%] w-[11.5vw] absolute left-[1vw] bottom-[4.4vw]"
-  >
-  </div>
-  <div
-    class="border-secondary-stroke rounded border-[.25vw] h-[15%] w-[12vw] absolute left-[.8vw] bottom-[6.6vw]"
-  >
-  </div>
-  <div
-    class="border-secondary-stroke rounded rotate-12 border-[.25vw] h-[80%] w-[2vw] absolute right-[1.1vw]"
-  >
-  </div>
-</div>
+</Fragment>
