@@ -4,12 +4,25 @@
     --color-background: #0F111A;
     --color-stroke: #EEFFFF;
     --color-secondary-stroke: #C6D2D2;
+    --color-operator: #89ddff;
+    --color-keyword: #c792ea;
+    --color-function: #82aaff;
+    --color-attribute: #ffcb6b;
+    --color-variable: #eeffff;
 
     --font-cursive: 'Fuzzy Bubbles', cursive;
+    --font-source: 'Source Code Pro Variable', monospace;
+
     --font-sans: 'DM Sans Variable', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
     --font-krona: 'Krona One', sans-serif;
     --font-orbitron: 'Orbitron Variable', sans-serif;
     --font-monterrat: 'Montserrat Variable', sans-serif;
+    --font-rubik: 'Rubik Mono One', sans-serif;
+}
+
+:root {
+    --ti-cursor-color: #ffcb6b;
+    --ti-cursor-font-size: 2vw;
 }
 
