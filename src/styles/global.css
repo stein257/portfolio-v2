@@ -26,3 +26,14 @@
     --ti-cursor-font-size: 2vw;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eeffff;
+}
