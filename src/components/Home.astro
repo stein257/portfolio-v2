@@ -4,12 +4,16 @@ import PhoneSection from "./phone/PhoneSection.astro";
 import ComputerSection from "./computer/ComputerSection.astro";
 import LeftDrawerSection from "./left-drawer/LeftDrawerSection.astro";
 import RightDrawerSection from "./right-drawer/RightDrawerSection.astro";
+import CodeSection from "./code/CodeSection.astro";
+import RotationMessage from "./rotation-message/RotationMessage.jsx";
 ---
 
-<main>
+<main class="[@media(max-width:500px)]:translate-y-[50vw]">
   <Coder />
+  <CodeSection />
   <ComputerSection />
   <PhoneSection />
   <LeftDrawerSection />
   <RightDrawerSection />
+  <RotationMessage client:load />
 </main>

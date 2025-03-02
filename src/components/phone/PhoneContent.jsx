@@ -19,10 +19,12 @@ const PhoneContent = () => {
       }}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={"50"}
-        height={"50"}
+        width={"3vw"}
+        height={"3vw"}
         viewBox="0 0 512 512"
-        className={"transform transition-transform duration-1000 ease text-stroke"}
+        className={
+          "transform transition-transform duration-1000 ease text-stroke [@media(max-height:600px)]:transform-[scale(1)]!"
+        }
         style={{ transform: logoTransform }}>
         <path
           fill={"currentColor"}
