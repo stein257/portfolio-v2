@@ -6,3 +6,16 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <Home />
 </Layout>
+
+<script>
+  import Lenis from "lenis";
+
+  const lenis = new Lenis({ lerp: 0.075 });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+</script>
